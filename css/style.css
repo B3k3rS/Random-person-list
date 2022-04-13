@@ -1,0 +1,86 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #eee;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.card-list {
+    width: 95%;
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.more-but {
+    text-align: center;
+    width: 250px;
+    margin: 0 auto;
+    background: #333;
+    color:#fff;
+    padding: 5px;
+    border-radius: 5px;  
+}
+
+.more-but {
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.card {
+    min-width: 230px;
+    width: 20%;
+    padding: 10px;
+}
+
+.card > img {
+    width: 100%;
+}
+
+.card > h2 {
+    font-weight: 500;
+    font-size: 22px;
+    margin-top: 10px;
+}
+
+.card > p {
+    font-size: 14px;
+}
+
+.card > h2,
+.card > p:last-child {
+    color:#333
+}
+
+
+.card > p:last-child {
+    padding-top: 20px;
+}
+
+.card > p:not(:last-child) {
+    color: #9e1b1b;
+}
+
+/* не работает, почему-то
+.card > p:first-child {
+    color: #9e1b1b;
+} */
+
+@media screen and (max-width: 400px) {
+    .card {
+        width: 90%;
+    }
+}
